@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JS-函数、数组 </title>
+    </head>
+    <style>
+    h1{
+        text-align:center;
+        border:solid 2px yellow;
+        border-radius: 50%;
+
+    }
+    </style>
+    <body>
+          <h1> JS-函数、数组、包装 </h1>
+        <script>
+       function sayname(name){
+            alert(name);
+        }
+        function sum(num1,num2){
+            return num1+num2;
+        }
+        alert(sayname.length);
+        alert(sum.length);
+        function callsum1(num1,num2){
+            return sum.apply(this,arguments);
+        }
+        function callsum2(num1,num2){
+            return sum.apply(this,[num1,num2]);
+        }
+        alert(callsum1(10,10));
+        alert(callsum2(10,10));
+        window.c="red";
+        var o={c:"blue"};
+        function saycolor(){
+            alert(this.c);
+        }
+        var value="25";
+        var number=Number(value);
+        alert(typeof number);
+        var obj=new Number(value);
+        alert(typeof obj);*/
+
+        var stringvalue="hello";
+        var result=stringvalue.concat(" world");
+        alert(result);
+        </script>
+        
+    </body>
+</html>
